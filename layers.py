@@ -12,10 +12,12 @@ class Dense:
         self.dW = None
         self.db = None
 
+
     def forward(self, X: np.ndarray) -> np.ndarray:
         """Forward pass: Z = XW + b."""
         self.X = X
         return X @ self.W + self.b
+
 
     def backward(self, dZ: np.ndarray) -> np.ndarray:
         """Compute gradients and return the gradient with respect to the input."""
