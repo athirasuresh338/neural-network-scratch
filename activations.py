@@ -1,6 +1,5 @@
 import numpy as np
 
-
 def relu(Z: np.ndarray) -> np.ndarray:
     """ReLU activation: f(z) = max(0, z)"""
     return np.maximum(0, Z)
