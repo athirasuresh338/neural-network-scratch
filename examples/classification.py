@@ -1,13 +1,14 @@
 import os
 import sys
+
+# Add project root to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 import numpy as np
 import pandas as pd
 from model import NeuralNetwork
 from train import train
 from loss import binary_cross_entropy
-
-# Add project root to the Python path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 def get_dataset_path():
     """Find the dataset in the project root directory."""
